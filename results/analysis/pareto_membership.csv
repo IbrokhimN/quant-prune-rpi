@@ -1,0 +1,181 @@
+group,plane,label,on_strict_front,on_robust_front,dominated_by_strict
+numpy blas1,main_lat_b1_ms,float32/int8_dyn,0,,float32/int8_wo
+numpy blas1,main_lat_b1_ms,float32/int8_wo,1,,-
+numpy blas1,main_lat_b1_ms,prune70/fp32,1,,-
+numpy blas1,main_lat_b1_ms,prune60/fp32,0,,prune70/fp32
+numpy blas1,main_lat_b1_ms,prune50/fp32,0,,"prune60/fp32, prune70/fp32"
+numpy blas1,main_lat_b1_ms,prune40/fp32,0,,"prune50/fp32, prune60/fp32, prune70/fp32"
+numpy blas1,main_lat_b1_ms,prune30/fp32,0,,"prune40/fp32, prune50/fp32, prune60/fp32"
+numpy blas1,main_lat_b1_ms,prune20/fp32,0,,"prune30/fp32, prune40/fp32, prune50/fp32"
+numpy blas1,main_lat_b1_ms,prune10/fp32,0,,"prune20/fp32, prune30/fp32, prune40/fp32"
+numpy blas1,main_lat_b1_ms,float32/fp32,0,,"prune10/fp32, prune20/fp32, prune30/fp32"
+numpy blas1,main_lat_b1_ms,float32_ft3/fp32,0,,"prune10/fp32, prune20/fp32, prune30/fp32"
+numpy blas1,main_lat_b1_ms,unstruct10/fp32,0,,"prune10/fp32, prune20/fp32, prune30/fp32"
+numpy blas1,main_lat_b1_ms,unstruct20/fp32,0,,"prune10/fp32, prune20/fp32, prune30/fp32"
+numpy blas1,main_lat_b1_ms,unstruct30/fp32,0,,"prune10/fp32, prune20/fp32, prune30/fp32"
+numpy blas1,main_lat_b1_ms,unstruct40/fp32,0,,"prune10/fp32, prune20/fp32, prune30/fp32"
+numpy blas1,main_lat_b1_ms,unstruct50/fp32,0,,"prune10/fp32, prune20/fp32, prune30/fp32"
+numpy blas1,main_lat_b1_ms,unstruct60/fp32,0,,"prune10/fp32, prune20/fp32, prune30/fp32"
+numpy blas1,main_lat_b1_ms,unstruct70/fp32,0,,"prune10/fp32, prune20/fp32, prune30/fp32"
+numpy blas1,main_lat_b32_ms,float32/int8_dyn,0,,float32/int8_wo
+numpy blas1,main_lat_b32_ms,float32/int8_wo,1,,-
+numpy blas1,main_lat_b32_ms,prune70/fp32,1,,-
+numpy blas1,main_lat_b32_ms,prune60/fp32,0,,prune70/fp32
+numpy blas1,main_lat_b32_ms,prune50/fp32,0,,"prune60/fp32, prune70/fp32"
+numpy blas1,main_lat_b32_ms,prune40/fp32,0,,"prune50/fp32, prune60/fp32, prune70/fp32"
+numpy blas1,main_lat_b32_ms,prune30/fp32,0,,"prune40/fp32, prune50/fp32, prune60/fp32"
+numpy blas1,main_lat_b32_ms,prune20/fp32,0,,"float32/int8_wo, prune30/fp32, prune40/fp32"
+numpy blas1,main_lat_b32_ms,prune10/fp32,0,,"float32/int8_wo, prune20/fp32, prune30/fp32"
+numpy blas1,main_lat_b32_ms,float32/fp32,0,,"float32/int8_wo, prune10/fp32, prune20/fp32"
+numpy blas1,main_lat_b32_ms,float32_ft3/fp32,0,,"float32/int8_wo, prune10/fp32, prune20/fp32"
+numpy blas1,main_lat_b32_ms,unstruct10/fp32,0,,"float32/int8_wo, prune10/fp32, prune20/fp32"
+numpy blas1,main_lat_b32_ms,unstruct20/fp32,0,,"float32/int8_wo, prune10/fp32, prune20/fp32"
+numpy blas1,main_lat_b32_ms,unstruct30/fp32,0,,"float32/int8_wo, prune10/fp32, prune20/fp32"
+numpy blas1,main_lat_b32_ms,unstruct40/fp32,0,,"float32/int8_wo, prune10/fp32, prune20/fp32"
+numpy blas1,main_lat_b32_ms,unstruct50/fp32,0,,"float32/int8_wo, prune10/fp32, prune20/fp32"
+numpy blas1,main_lat_b32_ms,unstruct60/fp32,0,,"float32/int8_wo, prune10/fp32, prune20/fp32"
+numpy blas1,main_lat_b32_ms,unstruct70/fp32,0,,"float32/int8_wo, prune10/fp32, prune20/fp32"
+numpy blas1,size,float32/fp32,0,0,float32_ft3/fp32; float32/int8_dyn; float32/int8_wo; prune20/fp32; prune30/fp32; prune40/fp32; prune50/fp32; prune60/fp32; prune70/fp32; unstruct10/fp32; unstruct20/fp32; unstruct30/fp32; unstruct40/fp32; unstruct50/fp32; unstruct60/fp32; unstruct70/fp32
+numpy blas1,size,float32_ft3/fp32,0,0,prune30/fp32; prune40/fp32; prune70/fp32; unstruct10/fp32; unstruct20/fp32; unstruct30/fp32; unstruct40/fp32; unstruct50/fp32; unstruct60/fp32; unstruct70/fp32
+numpy blas1,size,float32/int8_dyn,1,1,
+numpy blas1,size,float32/int8_wo,0,1,float32/int8_dyn
+numpy blas1,size,prune10/fp32,0,0,float32/int8_dyn; float32/int8_wo; prune20/fp32; prune30/fp32; prune40/fp32; prune50/fp32; prune60/fp32; prune70/fp32
+numpy blas1,size,prune20/fp32,0,0,prune30/fp32; prune40/fp32; prune50/fp32; prune60/fp32; prune70/fp32
+numpy blas1,size,prune30/fp32,0,0,prune70/fp32
+numpy blas1,size,prune40/fp32,0,0,prune70/fp32
+numpy blas1,size,prune50/fp32,0,0,prune60/fp32; prune70/fp32
+numpy blas1,size,prune60/fp32,0,0,prune70/fp32
+numpy blas1,size,prune70/fp32,1,0,
+numpy blas1,size,unstruct10/fp32,0,0,prune70/fp32; unstruct30/fp32; unstruct40/fp32; unstruct50/fp32; unstruct60/fp32; unstruct70/fp32
+numpy blas1,size,unstruct20/fp32,0,0,prune30/fp32; prune40/fp32; prune70/fp32; unstruct10/fp32; unstruct30/fp32; unstruct40/fp32; unstruct50/fp32; unstruct60/fp32; unstruct70/fp32
+numpy blas1,size,unstruct30/fp32,1,0,
+numpy blas1,size,unstruct40/fp32,0,0,prune70/fp32; unstruct30/fp32; unstruct60/fp32; unstruct70/fp32
+numpy blas1,size,unstruct50/fp32,0,0,prune70/fp32; unstruct30/fp32; unstruct60/fp32; unstruct70/fp32
+numpy blas1,size,unstruct60/fp32,0,0,unstruct30/fp32; unstruct70/fp32
+numpy blas1,size,unstruct70/fp32,0,0,unstruct30/fp32
+numpy blas1,lat_b1,float32/fp32,0,0,float32_ft3/fp32; prune20/fp32; prune30/fp32; prune40/fp32; prune50/fp32; prune60/fp32; prune70/fp32; unstruct10/fp32; unstruct20/fp32; unstruct30/fp32; unstruct40/fp32; unstruct50/fp32; unstruct60/fp32; unstruct70/fp32
+numpy blas1,lat_b1,float32_ft3/fp32,0,0,prune30/fp32; prune40/fp32; prune70/fp32; unstruct10/fp32; unstruct20/fp32; unstruct30/fp32; unstruct40/fp32; unstruct50/fp32; unstruct60/fp32; unstruct70/fp32
+numpy blas1,lat_b1,float32/int8_dyn,0,0,float32/fp32; float32_ft3/fp32; float32/int8_wo; prune20/fp32; prune30/fp32; prune40/fp32; prune50/fp32; prune60/fp32; prune70/fp32; unstruct10/fp32; unstruct20/fp32; unstruct30/fp32; unstruct40/fp32; unstruct50/fp32; unstruct60/fp32; unstruct70/fp32
+numpy blas1,lat_b1,float32/int8_wo,0,0,float32/fp32; float32_ft3/fp32; prune20/fp32; prune30/fp32; prune40/fp32; prune50/fp32; prune60/fp32; prune70/fp32; unstruct10/fp32; unstruct20/fp32; unstruct30/fp32; unstruct40/fp32; unstruct50/fp32; unstruct60/fp32; unstruct70/fp32
+numpy blas1,lat_b1,prune10/fp32,0,0,prune20/fp32; prune30/fp32; prune40/fp32; prune50/fp32; prune60/fp32; prune70/fp32
+numpy blas1,lat_b1,prune20/fp32,0,0,prune30/fp32; prune40/fp32; prune50/fp32; prune60/fp32; prune70/fp32
+numpy blas1,lat_b1,prune30/fp32,0,0,prune70/fp32
+numpy blas1,lat_b1,prune40/fp32,0,1,prune70/fp32
+numpy blas1,lat_b1,prune50/fp32,0,1,prune60/fp32; prune70/fp32
+numpy blas1,lat_b1,prune60/fp32,0,1,prune70/fp32
+numpy blas1,lat_b1,prune70/fp32,1,1,
+numpy blas1,lat_b1,unstruct10/fp32,0,0,prune70/fp32; unstruct40/fp32; unstruct70/fp32
+numpy blas1,lat_b1,unstruct20/fp32,0,0,prune30/fp32; prune40/fp32; prune70/fp32; unstruct40/fp32
+numpy blas1,lat_b1,unstruct30/fp32,1,0,
+numpy blas1,lat_b1,unstruct40/fp32,0,0,prune70/fp32
+numpy blas1,lat_b1,unstruct50/fp32,0,0,prune70/fp32; unstruct40/fp32; unstruct60/fp32; unstruct70/fp32
+numpy blas1,lat_b1,unstruct60/fp32,0,0,unstruct70/fp32
+numpy blas1,lat_b1,unstruct70/fp32,1,0,
+numpy blas1,lat_b32,float32/fp32,0,0,float32_ft3/fp32; prune20/fp32; prune30/fp32; prune40/fp32; prune50/fp32; prune60/fp32; prune70/fp32; unstruct10/fp32; unstruct20/fp32; unstruct30/fp32; unstruct40/fp32; unstruct50/fp32; unstruct60/fp32
+numpy blas1,lat_b32,float32_ft3/fp32,0,0,prune30/fp32; prune40/fp32; prune70/fp32; unstruct10/fp32; unstruct20/fp32; unstruct30/fp32; unstruct50/fp32; unstruct60/fp32
+numpy blas1,lat_b32,float32/int8_dyn,0,0,float32_ft3/fp32; prune20/fp32; prune30/fp32; prune40/fp32; prune50/fp32; prune60/fp32; prune70/fp32; unstruct10/fp32; unstruct20/fp32; unstruct30/fp32; unstruct40/fp32; unstruct50/fp32; unstruct60/fp32; unstruct70/fp32
+numpy blas1,lat_b32,float32/int8_wo,0,0,float32/fp32; float32_ft3/fp32; prune20/fp32; prune30/fp32; prune40/fp32; prune50/fp32; prune60/fp32; prune70/fp32; unstruct10/fp32; unstruct20/fp32; unstruct30/fp32; unstruct40/fp32; unstruct50/fp32; unstruct60/fp32; unstruct70/fp32
+numpy blas1,lat_b32,prune10/fp32,0,0,prune20/fp32; prune30/fp32; prune40/fp32; prune50/fp32; prune60/fp32; prune70/fp32
+numpy blas1,lat_b32,prune20/fp32,0,0,prune30/fp32; prune40/fp32; prune50/fp32; prune60/fp32; prune70/fp32
+numpy blas1,lat_b32,prune30/fp32,0,0,prune70/fp32
+numpy blas1,lat_b32,prune40/fp32,0,0,prune70/fp32
+numpy blas1,lat_b32,prune50/fp32,0,1,prune60/fp32; prune70/fp32
+numpy blas1,lat_b32,prune60/fp32,0,1,prune70/fp32
+numpy blas1,lat_b32,prune70/fp32,1,1,
+numpy blas1,lat_b32,unstruct10/fp32,0,0,prune70/fp32
+numpy blas1,lat_b32,unstruct20/fp32,0,0,prune30/fp32; prune40/fp32; prune70/fp32; unstruct10/fp32; unstruct50/fp32; unstruct60/fp32
+numpy blas1,lat_b32,unstruct30/fp32,1,0,
+numpy blas1,lat_b32,unstruct40/fp32,0,0,prune70/fp32; unstruct30/fp32; unstruct50/fp32; unstruct60/fp32
+numpy blas1,lat_b32,unstruct50/fp32,0,0,prune70/fp32
+numpy blas1,lat_b32,unstruct60/fp32,1,0,
+numpy blas1,lat_b32,unstruct70/fp32,0,0,unstruct30/fp32
+numpy blasauto,main_lat_b1_ms,float32/int8_dyn,0,,float32/int8_wo
+numpy blasauto,main_lat_b1_ms,float32/int8_wo,1,,-
+numpy blasauto,main_lat_b1_ms,prune70/fp32,1,,-
+numpy blasauto,main_lat_b1_ms,prune60/fp32,0,,prune70/fp32
+numpy blasauto,main_lat_b1_ms,prune50/fp32,0,,"prune60/fp32, prune70/fp32"
+numpy blasauto,main_lat_b1_ms,prune40/fp32,0,,"prune50/fp32, prune60/fp32, prune70/fp32"
+numpy blasauto,main_lat_b1_ms,prune30/fp32,0,,"prune40/fp32, prune50/fp32, prune60/fp32"
+numpy blasauto,main_lat_b1_ms,prune20/fp32,0,,"prune30/fp32, prune40/fp32, prune50/fp32"
+numpy blasauto,main_lat_b1_ms,prune10/fp32,0,,"prune20/fp32, prune30/fp32, prune40/fp32"
+numpy blasauto,main_lat_b1_ms,float32/fp32,0,,"prune10/fp32, prune20/fp32, prune30/fp32"
+numpy blasauto,main_lat_b1_ms,float32_ft3/fp32,0,,"prune10/fp32, prune20/fp32, prune30/fp32"
+numpy blasauto,main_lat_b1_ms,unstruct10/fp32,0,,"prune10/fp32, prune20/fp32, prune30/fp32"
+numpy blasauto,main_lat_b1_ms,unstruct20/fp32,0,,"prune10/fp32, prune20/fp32, prune30/fp32"
+numpy blasauto,main_lat_b1_ms,unstruct30/fp32,0,,"prune10/fp32, prune20/fp32, prune30/fp32"
+numpy blasauto,main_lat_b1_ms,unstruct40/fp32,0,,"prune10/fp32, prune20/fp32, prune30/fp32"
+numpy blasauto,main_lat_b1_ms,unstruct50/fp32,0,,"prune10/fp32, prune20/fp32, prune30/fp32"
+numpy blasauto,main_lat_b1_ms,unstruct60/fp32,0,,"prune10/fp32, prune20/fp32, prune30/fp32"
+numpy blasauto,main_lat_b1_ms,unstruct70/fp32,0,,"prune10/fp32, prune20/fp32, prune30/fp32"
+numpy blasauto,main_lat_b32_ms,float32/int8_dyn,0,,float32/int8_wo
+numpy blasauto,main_lat_b32_ms,float32/int8_wo,1,,-
+numpy blasauto,main_lat_b32_ms,prune70/fp32,1,,-
+numpy blasauto,main_lat_b32_ms,prune60/fp32,0,,prune70/fp32
+numpy blasauto,main_lat_b32_ms,prune50/fp32,0,,"prune60/fp32, prune70/fp32"
+numpy blasauto,main_lat_b32_ms,prune40/fp32,0,,"prune50/fp32, prune60/fp32, prune70/fp32"
+numpy blasauto,main_lat_b32_ms,prune30/fp32,0,,"prune40/fp32, prune50/fp32, prune60/fp32"
+numpy blasauto,main_lat_b32_ms,prune20/fp32,0,,"float32/int8_wo, prune30/fp32, prune40/fp32"
+numpy blasauto,main_lat_b32_ms,prune10/fp32,0,,"float32/int8_wo, prune20/fp32, prune30/fp32"
+numpy blasauto,main_lat_b32_ms,float32/fp32,0,,"float32/int8_wo, prune10/fp32, prune20/fp32"
+numpy blasauto,main_lat_b32_ms,float32_ft3/fp32,0,,"float32/int8_wo, prune10/fp32, prune20/fp32"
+numpy blasauto,main_lat_b32_ms,unstruct10/fp32,0,,"float32/int8_wo, prune10/fp32, prune20/fp32"
+numpy blasauto,main_lat_b32_ms,unstruct20/fp32,0,,"float32/int8_wo, prune10/fp32, prune20/fp32"
+numpy blasauto,main_lat_b32_ms,unstruct30/fp32,0,,"float32/int8_wo, prune10/fp32, prune20/fp32"
+numpy blasauto,main_lat_b32_ms,unstruct40/fp32,0,,"float32/int8_wo, prune10/fp32, prune20/fp32"
+numpy blasauto,main_lat_b32_ms,unstruct50/fp32,0,,"float32/int8_wo, prune10/fp32, prune20/fp32"
+numpy blasauto,main_lat_b32_ms,unstruct60/fp32,0,,"float32/int8_wo, prune10/fp32, prune20/fp32"
+numpy blasauto,main_lat_b32_ms,unstruct70/fp32,0,,"float32/int8_wo, prune10/fp32, prune20/fp32"
+numpy blasauto,size,float32/fp32,0,0,float32_ft3/fp32; float32/int8_dyn; float32/int8_wo; prune20/fp32; prune30/fp32; prune40/fp32; prune50/fp32; prune60/fp32; prune70/fp32; unstruct10/fp32; unstruct20/fp32; unstruct30/fp32; unstruct40/fp32; unstruct50/fp32; unstruct60/fp32; unstruct70/fp32
+numpy blasauto,size,float32_ft3/fp32,0,0,prune30/fp32; prune40/fp32; prune70/fp32; unstruct10/fp32; unstruct20/fp32; unstruct30/fp32; unstruct40/fp32; unstruct50/fp32; unstruct60/fp32; unstruct70/fp32
+numpy blasauto,size,float32/int8_dyn,1,1,
+numpy blasauto,size,float32/int8_wo,0,1,float32/int8_dyn
+numpy blasauto,size,prune10/fp32,0,0,float32/int8_dyn; float32/int8_wo; prune20/fp32; prune30/fp32; prune40/fp32; prune50/fp32; prune60/fp32; prune70/fp32
+numpy blasauto,size,prune20/fp32,0,0,prune30/fp32; prune40/fp32; prune50/fp32; prune60/fp32; prune70/fp32
+numpy blasauto,size,prune30/fp32,0,0,prune70/fp32
+numpy blasauto,size,prune40/fp32,0,0,prune70/fp32
+numpy blasauto,size,prune50/fp32,0,0,prune60/fp32; prune70/fp32
+numpy blasauto,size,prune60/fp32,0,0,prune70/fp32
+numpy blasauto,size,prune70/fp32,1,0,
+numpy blasauto,size,unstruct10/fp32,0,0,prune70/fp32; unstruct30/fp32; unstruct40/fp32; unstruct50/fp32; unstruct60/fp32; unstruct70/fp32
+numpy blasauto,size,unstruct20/fp32,0,0,prune30/fp32; prune40/fp32; prune70/fp32; unstruct10/fp32; unstruct30/fp32; unstruct40/fp32; unstruct50/fp32; unstruct60/fp32; unstruct70/fp32
+numpy blasauto,size,unstruct30/fp32,1,0,
+numpy blasauto,size,unstruct40/fp32,0,0,prune70/fp32; unstruct30/fp32; unstruct60/fp32; unstruct70/fp32
+numpy blasauto,size,unstruct50/fp32,0,0,prune70/fp32; unstruct30/fp32; unstruct60/fp32; unstruct70/fp32
+numpy blasauto,size,unstruct60/fp32,0,0,unstruct30/fp32; unstruct70/fp32
+numpy blasauto,size,unstruct70/fp32,0,0,unstruct30/fp32
+numpy blasauto,lat_b1,float32/fp32,0,0,float32_ft3/fp32; prune20/fp32; prune30/fp32; prune40/fp32; prune50/fp32; prune60/fp32; prune70/fp32; unstruct20/fp32; unstruct30/fp32; unstruct40/fp32; unstruct50/fp32; unstruct60/fp32; unstruct70/fp32
+numpy blasauto,lat_b1,float32_ft3/fp32,0,0,prune30/fp32; prune40/fp32; prune70/fp32; unstruct40/fp32; unstruct60/fp32
+numpy blasauto,lat_b1,float32/int8_dyn,0,0,float32/fp32; float32_ft3/fp32; float32/int8_wo; prune20/fp32; prune30/fp32; prune40/fp32; prune50/fp32; prune60/fp32; prune70/fp32; unstruct10/fp32; unstruct20/fp32; unstruct30/fp32; unstruct40/fp32; unstruct50/fp32; unstruct60/fp32; unstruct70/fp32
+numpy blasauto,lat_b1,float32/int8_wo,0,0,float32/fp32; float32_ft3/fp32; prune20/fp32; prune30/fp32; prune40/fp32; prune50/fp32; prune60/fp32; prune70/fp32; unstruct10/fp32; unstruct20/fp32; unstruct30/fp32; unstruct40/fp32; unstruct50/fp32; unstruct60/fp32; unstruct70/fp32
+numpy blasauto,lat_b1,prune10/fp32,0,0,prune20/fp32; prune30/fp32; prune40/fp32; prune50/fp32; prune60/fp32; prune70/fp32
+numpy blasauto,lat_b1,prune20/fp32,0,0,prune30/fp32; prune40/fp32; prune50/fp32; prune60/fp32; prune70/fp32
+numpy blasauto,lat_b1,prune30/fp32,0,0,prune70/fp32
+numpy blasauto,lat_b1,prune40/fp32,0,1,prune70/fp32
+numpy blasauto,lat_b1,prune50/fp32,0,1,prune60/fp32; prune70/fp32
+numpy blasauto,lat_b1,prune60/fp32,0,1,prune70/fp32
+numpy blasauto,lat_b1,prune70/fp32,1,1,
+numpy blasauto,lat_b1,unstruct10/fp32,0,0,prune70/fp32; unstruct30/fp32; unstruct40/fp32; unstruct50/fp32; unstruct60/fp32; unstruct70/fp32
+numpy blasauto,lat_b1,unstruct20/fp32,0,0,prune30/fp32; prune40/fp32; prune70/fp32; unstruct40/fp32; unstruct50/fp32; unstruct60/fp32; unstruct70/fp32
+numpy blasauto,lat_b1,unstruct30/fp32,1,0,
+numpy blasauto,lat_b1,unstruct40/fp32,0,0,prune70/fp32; unstruct60/fp32
+numpy blasauto,lat_b1,unstruct50/fp32,0,0,prune70/fp32; unstruct40/fp32; unstruct60/fp32
+numpy blasauto,lat_b1,unstruct60/fp32,1,0,
+numpy blasauto,lat_b1,unstruct70/fp32,1,0,
+numpy blasauto,lat_b32,float32/fp32,0,0,prune20/fp32; prune30/fp32; prune40/fp32; prune50/fp32; prune60/fp32; prune70/fp32; unstruct20/fp32; unstruct60/fp32
+numpy blasauto,lat_b32,float32_ft3/fp32,0,0,prune30/fp32; prune40/fp32; prune70/fp32; unstruct20/fp32; unstruct60/fp32
+numpy blasauto,lat_b32,float32/int8_dyn,0,0,float32_ft3/fp32; prune20/fp32; prune30/fp32; prune40/fp32; prune50/fp32; prune60/fp32; prune70/fp32; unstruct10/fp32; unstruct20/fp32; unstruct30/fp32; unstruct40/fp32; unstruct50/fp32; unstruct60/fp32; unstruct70/fp32
+numpy blasauto,lat_b32,float32/int8_wo,0,0,float32/fp32; float32_ft3/fp32; prune20/fp32; prune30/fp32; prune40/fp32; prune50/fp32; prune60/fp32; prune70/fp32; unstruct20/fp32; unstruct30/fp32; unstruct40/fp32; unstruct50/fp32; unstruct60/fp32; unstruct70/fp32
+numpy blasauto,lat_b32,prune10/fp32,0,0,prune20/fp32; prune30/fp32; prune40/fp32; prune50/fp32; prune60/fp32; prune70/fp32
+numpy blasauto,lat_b32,prune20/fp32,0,0,prune30/fp32; prune40/fp32; prune50/fp32; prune60/fp32; prune70/fp32
+numpy blasauto,lat_b32,prune30/fp32,0,0,prune70/fp32
+numpy blasauto,lat_b32,prune40/fp32,0,0,prune70/fp32
+numpy blasauto,lat_b32,prune50/fp32,0,1,prune60/fp32; prune70/fp32
+numpy blasauto,lat_b32,prune60/fp32,0,1,prune70/fp32
+numpy blasauto,lat_b32,prune70/fp32,1,1,
+numpy blasauto,lat_b32,unstruct10/fp32,0,0,prune70/fp32; unstruct30/fp32; unstruct40/fp32; unstruct50/fp32; unstruct60/fp32; unstruct70/fp32
+numpy blasauto,lat_b32,unstruct20/fp32,0,0,prune30/fp32; prune40/fp32; prune70/fp32
+numpy blasauto,lat_b32,unstruct30/fp32,1,0,
+numpy blasauto,lat_b32,unstruct40/fp32,0,0,prune70/fp32; unstruct30/fp32; unstruct50/fp32; unstruct60/fp32
+numpy blasauto,lat_b32,unstruct50/fp32,0,0,prune70/fp32; unstruct30/fp32; unstruct60/fp32
+numpy blasauto,lat_b32,unstruct60/fp32,1,0,
+numpy blasauto,lat_b32,unstruct70/fp32,0,0,unstruct30/fp32

@@ -1,0 +1,8 @@
+variant,precision,accuracy_b1,accuracy_b32,sparsity_before,sparsity_after,size_kb
+unstruct10,fp32,0.9902,0.9902,0.1000,0.1000,241.7
+unstruct20,fp32,0.9900,0.9900,0.2000,0.2000,241.7
+unstruct30,fp32,0.9916,0.9916,0.3000,0.3000,241.7
+unstruct40,fp32,0.9907,0.9907,0.4000,0.4000,241.7
+unstruct50,fp32,0.9907,0.9907,0.5000,0.5000,241.7
+unstruct60,fp32,0.9909,0.9909,0.6000,0.6000,241.7
+unstruct70,fp32,0.9913,0.9913,0.7000,0.7000,241.7

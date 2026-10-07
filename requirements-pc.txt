@@ -1,0 +1,7 @@
+numpy
+matplotlib
+# для шага 05 (экспорт в TFLite и проверка эквивалентности)
+tensorflow-cpu
+ai-edge-litert
+# для дообучения на GPU, если нужно (версию подберите под свою CUDA)
+# cupy-cuda12x

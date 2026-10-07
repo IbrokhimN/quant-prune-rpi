@@ -1,0 +1,202 @@
+{
+  "env": {
+    "platform": "Linux-6.18.34+rpt-rpi-v7-armv7l-with-glibc2.41",
+    "machine": "armv7l",
+    "python": "3.13.5",
+    "python_bits": 32,
+    "numpy": "2.2.4",
+    "board": "Raspberry Pi 3 Model B Plus Rev 1.3",
+    "cpu_model": "ARMv7 Processor rev 4 (v7l)",
+    "cpu_governor": "performance",
+    "cpu_max_mhz": 1400,
+    "n_cpus": 4,
+    "env_threads": {
+      "OPENBLAS_NUM_THREADS": null,
+      "OMP_NUM_THREADS": null,
+      "MKL_NUM_THREADS": null
+    },
+    "pi_state_start": {
+      "temp_c": 49.4,
+      "freq_mhz": 600,
+      "throttled": "0x50005"
+    },
+    "numpy_blas": {
+      "name": "blas",
+      "found": true,
+      "version": "3.12.1",
+      "detection method": "pkgconfig",
+      "include directory": "/usr/include/arm-linux-gnueabihf",
+      "lib directory": "/usr/lib/arm-linux-gnueabihf",
+      "openblas configuration": "unknown",
+      "pc file directory": "/usr/lib/arm-linux-gnueabihf/pkgconfig"
+    },
+    "pi_state_end": {
+      "temp_c": 51.5,
+      "freq_mhz": 600,
+      "throttled": "0x50005"
+    }
+  },
+  "args": {
+    "models": "/home/ibrokhim/pi_bundle/models",
+    "testset": "/home/ibrokhim/pi_bundle/testset.npz",
+    "out": "/home/ibrokhim/pi_bundle/results",
+    "rounds": 3,
+    "runs_b1": 200,
+    "runs_b32": 30,
+    "warmup": 10,
+    "acc_n": 10000,
+    "cooldown": 5.0,
+    "quick": false
+  },
+  "pipelines": {
+    "float32/fp32": {
+      "pipeline": "float32",
+      "weights": "float32",
+      "activations": "float32",
+      "compute": "float32 GEMM (BLAS)",
+      "full_integer": false,
+      "batch_dependent": false
+    },
+    "float32_ft3/fp32": {
+      "pipeline": "float32",
+      "weights": "float32",
+      "activations": "float32",
+      "compute": "float32 GEMM (BLAS)",
+      "full_integer": false,
+      "batch_dependent": false
+    },
+    "float32/int8_dyn": {
+      "pipeline": "int8_dynamic_range_w8a8",
+      "weights": "int8, симметричная поканальная (per-output-channel), диапазон [-127,127], zero_point=0",
+      "activations": "int8, ДИНАМИЧЕСКАЯ per-tensor симметричная: scale = max|x|/127 считается в рантайме по ВСЕМУ входному батчу каждого Conv/Linear, без калибровки",
+      "compute": "int8 -> int32 matmul (numpy, без BLAS), затем деквантизация в float32",
+      "between_layers": "float32 (ReLU/MaxPool/Flatten идут во float; int8 не течёт между слоями)",
+      "bias": "float32, добавляется после деквантизации",
+      "full_integer": false,
+      "batch_dependent": true,
+      "note": "scale зависит от батча -> предсказание для объекта зависит от соседей по батчу; поэтому accuracy меряется и на batch=1"
+    },
+    "float32/int8_wo": {
+      "pipeline": "int8_weight_only",
+      "weights": "int8, симметричная поканальная (per-output-channel), диапазон [-127,127], zero_point=0",
+      "activations": "float32 (не квантуются)",
+      "compute": "float32 GEMM после поканального разворачивания весов при каждом вызове",
+      "between_layers": "float32",
+      "full_integer": false,
+      "batch_dependent": false,
+      "note": "выигрыш только в размере файла; скорость = float32 + оверхед разворачивания"
+    },
+    "prune10/fp32": {
+      "pipeline": "float32",
+      "weights": "float32",
+      "activations": "float32",
+      "compute": "float32 GEMM (BLAS)",
+      "full_integer": false,
+      "batch_dependent": false
+    },
+    "prune20/fp32": {
+      "pipeline": "float32",
+      "weights": "float32",
+      "activations": "float32",
+      "compute": "float32 GEMM (BLAS)",
+      "full_integer": false,
+      "batch_dependent": false
+    },
+    "prune30/fp32": {
+      "pipeline": "float32",
+      "weights": "float32",
+      "activations": "float32",
+      "compute": "float32 GEMM (BLAS)",
+      "full_integer": false,
+      "batch_dependent": false
+    },
+    "prune40/fp32": {
+      "pipeline": "float32",
+      "weights": "float32",
+      "activations": "float32",
+      "compute": "float32 GEMM (BLAS)",
+      "full_integer": false,
+      "batch_dependent": false
+    },
+    "prune50/fp32": {
+      "pipeline": "float32",
+      "weights": "float32",
+      "activations": "float32",
+      "compute": "float32 GEMM (BLAS)",
+      "full_integer": false,
+      "batch_dependent": false
+    },
+    "prune60/fp32": {
+      "pipeline": "float32",
+      "weights": "float32",
+      "activations": "float32",
+      "compute": "float32 GEMM (BLAS)",
+      "full_integer": false,
+      "batch_dependent": false
+    },
+    "prune70/fp32": {
+      "pipeline": "float32",
+      "weights": "float32",
+      "activations": "float32",
+      "compute": "float32 GEMM (BLAS)",
+      "full_integer": false,
+      "batch_dependent": false
+    },
+    "unstruct10/fp32": {
+      "pipeline": "float32",
+      "weights": "float32",
+      "activations": "float32",
+      "compute": "float32 GEMM (BLAS)",
+      "full_integer": false,
+      "batch_dependent": false
+    },
+    "unstruct20/fp32": {
+      "pipeline": "float32",
+      "weights": "float32",
+      "activations": "float32",
+      "compute": "float32 GEMM (BLAS)",
+      "full_integer": false,
+      "batch_dependent": false
+    },
+    "unstruct30/fp32": {
+      "pipeline": "float32",
+      "weights": "float32",
+      "activations": "float32",
+      "compute": "float32 GEMM (BLAS)",
+      "full_integer": false,
+      "batch_dependent": false
+    },
+    "unstruct40/fp32": {
+      "pipeline": "float32",
+      "weights": "float32",
+      "activations": "float32",
+      "compute": "float32 GEMM (BLAS)",
+      "full_integer": false,
+      "batch_dependent": false
+    },
+    "unstruct50/fp32": {
+      "pipeline": "float32",
+      "weights": "float32",
+      "activations": "float32",
+      "compute": "float32 GEMM (BLAS)",
+      "full_integer": false,
+      "batch_dependent": false
+    },
+    "unstruct60/fp32": {
+      "pipeline": "float32",
+      "weights": "float32",
+      "activations": "float32",
+      "compute": "float32 GEMM (BLAS)",
+      "full_integer": false,
+      "batch_dependent": false
+    },
+    "unstruct70/fp32": {
+      "pipeline": "float32",
+      "weights": "float32",
+      "activations": "float32",
+      "compute": "float32 GEMM (BLAS)",
+      "full_integer": false,
+      "batch_dependent": false
+    }
+  }
+}

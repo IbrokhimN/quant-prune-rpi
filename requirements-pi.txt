@@ -1,0 +1,3 @@
+numpy
+# LiteRT только для 64-bit Raspberry Pi OS, для armv7l (32-bit) колёс нет, см. README
+ai-edge-litert
